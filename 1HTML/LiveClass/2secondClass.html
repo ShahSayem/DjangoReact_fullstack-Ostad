@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table</title>
+  </head>
+  <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        /*border: 1px solid red; */
+    }
+
+    th, td {
+        border: 3px solid blue;
+        padding: 10px;
+        /* padding-top: 10px; */
+        text-align: center;
+    }
+
+    th {
+        background-color: blueviolet;
+    }
+    td {
+        background-color: aqua;
+        /* border: 3px solid red; */
+    } 
+
+  </style>
+  <body>
+    <table>
+      <tr>
+        <th>Heading1</th>
+        <th>Heading2</th>
+        <th>Heading3</th>
+      </tr>
+      <tr>
+        <td>Cell1</td>
+        <td>Cell2</td>
+        <td>Cell3</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Column4</td>
+        <td>Cell5</td>
+        <td>Cell6</td>
+      </tr>
+      <tr>
+        <!-- <td>Cell7</td> -->
+        <td>Cell8</td>
+        <td>Cell9</td>
+      </tr>
+      <tr>
+        <td colspan="3">Column span</td>
+      </tr>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias odit odio vero repellendus temporibus nesciunt nihil ad, ab vel necessitatibus aut perspiciatis nulla quod tempore voluptate, illum autem? Praesentium, unde.</p>
+  </body>
+</html>
