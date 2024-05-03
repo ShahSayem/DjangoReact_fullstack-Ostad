@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 1</title>
+    <style>
+        /* h1 {
+            border: 2px solid red;
+        } */
+
+        /* Universal Selector */
+        * {
+            /* color: blue; */
+            /* color: #888; */
+            /* color: rgb(45,  255, 255); */
+            color: hsl(89, 80%, 67%);
+        }
+
+        /* Decendent Selector */
+        ul li {
+            border: 2px solid black;
+        }
+
+        /* Class Selector: Total element */
+        .heading-class1 {
+            border: 2px solid red;
+        }
+        .heading-class2 {
+            border: 4px solid violet;
+        }
+
+        /* ID Selector: Specific portion*/
+        #p-id{ 
+            border: 5px solid aqua;
+        }
+        #h1-id{
+            background-color: cadetblue;
+        }
+
+        /* Grouping Selector */
+        h1, p{
+            margin: 50px;
+        }
+
+        .unit-mm{
+            font-size: 5mm;
+        }
+        .unit-cm{
+            font-size: 1cm;
+        }
+        .unit-inch{
+            font-size: 0.5in;
+        }
+        .unit-Q{
+            font-size:40Q;
+        }
+        .unit-px{
+            font-size:50px;
+        }
+
+
+        .border-class{
+            border-style: dotted;
+            border-top-width: 2px;
+            border-left-color: tomato;
+            border-radius: 20px;
+            margin-top: 50px;
+            padding: 20px 50px 30px 40px;
+            /* display: none; */
+        }
+
+        li{
+            /* display: inline; */
+            /* display: block; */
+            /* display: table; */
+            display: flex;
+        }
+
+        .box1{
+
+        }
+        .box2{
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading-class1" id="h1-id">This is a heading</h1>
+    <h2 class="heading-class1">This is second of CSS</h2>
+
+    <p id="p-id">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum labore omnis cupiditate facere similique et quibusdam, quod, animi laborum odit dolore dolorem sapiente dignissimos ea vero eius adipisci voluptatem.
+    </p>
+    <ul>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ul>
+
+    <li>Outside</li>
+
+    <h2 class="unit-mm">Font size 5mm</h2>
+    <h2 class="unit-cm">Font size 1cm</h2>
+    <h2 class="unit-inch">Font size 0.5 inch</h2>
+    <h2 class="unit-Q">Font size 40Q</h2>
+    <h2 class="unit-px">Font size 50px</h2>
+
+    <p class="border-class">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio nihil animi sequi? Aperiam iste facilis, similique architecto cupiditate tempore! Ea tempora, voluptatum maxime eos optio quis laborum obcaecati suscipit?
+    </p>
+
+    <li>Item1</li>
+    <li>Item2</li>
+    <li>Item3</li>
+    <li>Item4</li>
+    <li>Item5</li>
+
+    <div class="box1">
+        <span>CSS z-index: auto</span>
+        <div class="box2">
+            <span>CSS z-index: 1</span>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- 
+1.Selector
+2.Property
+3.Value -->
+
+<!-- 
+1.integer
+2.number
+3.dimention
+4.percentage -->
+
+<!-- 
+p {
+    margin: top right bottom left;
+    padding: top right bottom left;
+    padding: top-bottom right-left;
+    padding: top-bottom  bottom left;
+} -->
