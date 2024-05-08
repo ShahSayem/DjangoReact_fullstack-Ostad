@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS 1</title>
     <style>
+    /*Tag selector */
         /* h1 {
+        // Property  Value
             border: 2px solid red;
         } */
 
         /* Universal Selector */
         * {
             /* color: blue; */
-            /* color: #888; */
+            /* color: #9008f1; */
+            /* color: #F00; */
             /* color: rgb(45,  255, 255); */
-            color: hsl(89, 80%, 67%);
+            color: hsl(262, 74%, 37%);
         }
 
-        /* Decendent Selector */
+        /* Decendent Selector(apply for li under ul) */
         ul li {
             border: 2px solid black;
         }
 
-        /* Class Selector: Total element */
+        /* Class Selector: Can be use with multiple element */
         .heading-class1 {
             border: 2px solid red;
         }
@@ -30,7 +33,7 @@
             border: 4px solid violet;
         }
 
-        /* ID Selector: Specific portion*/
+        /* ID Selector: Can be use with specific element/tag */
         #p-id{ 
             border: 5px solid aqua;
         }
@@ -39,9 +42,9 @@
         }
 
         /* Grouping Selector */
-        h1, p{
+        /* h1, p{
             margin: 50px;
-        }
+        } */
 
         .unit-mm{
             font-size: 5mm;
@@ -53,7 +56,7 @@
             font-size: 0.5in;
         }
         .unit-Q{
-            font-size:40Q;
+            font-size:40Q; /* 1Q = 1/40 cm */
         }
         .unit-px{
             font-size:50px;
@@ -67,21 +70,40 @@
             border-radius: 20px;
             margin-top: 50px;
             padding: 20px 50px 30px 40px;
-            /* display: none; */
         }
 
         li{
             /* display: inline; */
             /* display: block; */
             /* display: table; */
+            /* display: none; */
+            /* display: table-caption; */
             display: flex;
         }
 
+        /* z-index is used for overlaping things */
         .box1{
-
+            position: absolute;
+            height: 200px;
+            width: 280px;
+            background-color: #f0baba;
+            z-index: auto; /*Less z-index will be in backside layer*/
+            text-align: center;
+            padding: 3px;
+            left: 300px;
+            top: 10px;
         }
         .box2{
-            
+            position: absolute;
+            height: 120px;
+            width: 200px;
+            background-color: #eae98f;
+            z-index: 1; /*-1*/     /*Greater z-index will be in frontside layer*/
+            text-align: center;
+            padding: 5px;
+            margin: 20px;
+            left: 20px;
+            top: 30px;
         }
     </style>
 </head>
@@ -141,6 +163,6 @@
 p {
     margin: top right bottom left;
     padding: top right bottom left;
-    padding: top-bottom right-left;
-    padding: top-bottom  bottom left;
+    padding: top-bottom right-left; 1 value for top-bottom, 1 for right-left
+    padding: top-bottom-left-right; 1 value for every side
 } -->

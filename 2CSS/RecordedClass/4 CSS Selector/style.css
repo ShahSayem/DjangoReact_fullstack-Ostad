@@ -1,0 +1,25 @@
+/* Element Selector */
+h1 {
+    color: red;
+    font: 70 px;
+}
+
+/* Class Selector */
+.class-selector {
+    background-color: aqua;
+}
+
+/* Id Selector  */
+#id-selector {
+    background-color: bisque;
+}
+
+/* Group Selector  */
+h2, h3 {
+    color: blue;
+}
+
+/* Universal Selector  */
+*{
+    font-style: italic;
+}
