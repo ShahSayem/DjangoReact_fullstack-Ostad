@@ -1,0 +1,71 @@
+/*Usees of Grid:
+ 2D (row, col)
+ Used for complex layout
+*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 50px;
+}
+
+.grid-item {
+    background-color: burlywood;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/*Usees of Flex:
+ 1D (row or col)
+ Used for simple layout 
+*/
+.flex-container {
+    display: flex;
+    /* justify-content: flex-start; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+}
+
+.flex-item {
+    background-color: darksalmon;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Float */
+.left {
+    float: left;
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+}
+
+.right {
+    float: right;
+    background-color: cyan;
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+}
+
+.inherit {
+    float: inherit;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+}
+
+
+.font {
+    font-weight: 800;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+}

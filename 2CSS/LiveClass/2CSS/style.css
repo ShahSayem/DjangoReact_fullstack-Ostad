@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: #338a93;
 }
 h1 {
@@ -8,4 +8,137 @@ h1 {
 p {
     color: blue;
     font-size: 30px;
+}  */
+
+.demo-cursor {
+    display: inline-block;
+    background-color: lightgreen;
+    width: 100px;
+    height: 100px; 
+    margin: 10px;
+    border: 3px solid white;
 }
+
+.auto {
+    cursor: auto;
+} 
+
+.default {
+    cursor: default;
+} 
+
+.crosshair {
+    cursor: crosshair;
+} 
+
+.pointer {
+    cursor: pointer;
+} 
+
+.move {
+    cursor: move;
+} 
+
+.text {
+    cursor: text;
+} 
+
+.wait {
+    cursor: wait;
+} 
+
+.help {
+    cursor: help;
+} 
+
+.not-allowed {
+    cursor: not-allowed;
+} 
+
+.progress {
+    cursor: progress;
+} 
+
+.alias {
+    cursor: alias;
+} 
+
+.copy {
+    cursor: copy;
+} 
+
+.no-drop {
+    cursor: no-drop;
+} 
+
+.e-resize {
+    cursor: e-resize;
+} 
+
+.n-resize {
+    cursor: n-resize;
+} 
+
+.ne-resize {
+    cursor: ne-resize;
+} 
+
+.nw-resize {
+    cursor: nw-resize;
+} 
+
+.s-resize {
+    cursor: s-resize;
+} 
+
+.se-resize {
+    cursor: se-resize;
+} 
+
+.sw-resize {
+    cursor: sw-resize;
+} 
+
+.w-resize {
+    cursor: w-resize;
+} 
+
+.ew-resize {
+    cursor: ew-resize;
+} 
+
+.ns-resize {
+    cursor: ns-resize;
+} 
+
+.nesw-resize {
+    cursor: nesw-resize;
+} 
+
+.nwse-resize {
+    cursor: nwse-resize;
+} 
+
+.col-resize {
+    cursor: col-resize;
+} 
+
+.row-resize {
+    cursor: row-resize;
+} 
+
+.zoom-in {
+    cursor: zoom-in;
+} 
+
+.zoom-out {
+    cursor: zoom-out;
+} 
+
+.grab {
+    cursor: grab;
+} 
+
+.grabbing {
+    cursor: grabbing;
+} 
