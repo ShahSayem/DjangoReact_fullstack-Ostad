@@ -1,71 +1,112 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(70, 102, 206);
+}
+
+.float-container {
+    width: 100%;
+    text-align: center;
+}
+
+.centered {
+    float: none;
+    margin: 0 auto;
+    background-color: aqua;
+    padding: 10px;
+}
+
 /*Usees of Grid:
  2D (row, col)
  Used for complex layout
 */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    margin-bottom: 50px;
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); responsive grid */
+  grid-template-columns: 1fr 2fr 1fr;
+  /* grid-template-rows: ; */
+  /* grid-template-rows: 80px 100px 50px; */
+  grid-gap: 10px;
+  margin-bottom: 50px;
 }
 
 .grid-item {
-    background-color: burlywood;
-    padding: 20px;
-    text-align: center;
+  background-color: burlywood;
+  padding: 20px;
+  text-align: center;
 }
-
 
 /*Usees of Flex:
  1D (row or col)
  Used for simple layout 
 */
 .flex-container {
-    display: flex;
-    /* justify-content: flex-start; */
-    /* justify-content: space-between; */
-    /* justify-content: space-evenly; */
-    justify-content: space-around;
-    align-items: center;
-    height: 300px;
+  display: flex;
+  /* justify-content: flex-start; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+  /* justify-content: center; */
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  /* flex-wrap: wrap; */
 }
 
 .flex-item {
-    background-color: darksalmon;
-    padding: 20px;
-    text-align: center;
+  background-color: darksalmon;
+  padding: 20px;
+  text-align: center;
+  /* flex: 1 0 200px; */
+  margin: 4px;
 }
-
 
 /* Float */
 .left {
-    float: left;
-    background-color: yellow;
-    height: 100px;
-    width: 100px;
-    padding: 20px;
+  float: left;
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+  padding: 20px;
 }
 
 .right {
-    float: right;
-    background-color: cyan;
-    height: 100px;
-    width: 100px;
-    padding: 20px;
+  float: right;
+  background-color: cyan;
+  height: 100px;
+  width: 100px;
+  padding: 20px;
 }
 
 .inherit {
-    float: inherit;
-    background-color: red;
-    height: 100px;
-    width: 100px;
-    padding: 20px;
+  float: inherit;
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+}
+
+.gap {
+    height: 200px;
 }
 
 
 .font {
-    font-weight: 800;
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
-    font-variant: small-caps;
+  font-weight: 800;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
 }
