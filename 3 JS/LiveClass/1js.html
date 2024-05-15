@@ -1,45 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS example</title>
-</head>
-<body>
+  </head>
+  <body>
     <script language="javascript" type="text/javascript">
-        var a = 100;
-        var b = "Hello world!";
-        document.write(a);
-        document.write("<br/>"); //HTML
-        document.write(b);
-        document.write("<br/>");
+      //var, let, const
+      var a = 100;
+      var b = "Hello world!";
 
-        // alert("This is alert");
+      // document.write("Hello world!");
+      document.write(a);
+      document.write("<br/>"); //HTML
+      document.write(b);
+      document.write("<br/>");
 
-        console.log("Hello from console");
+      // alert("This is alert");
 
-        var x, y, z;
-        x = "string";
-        y = 50;
-        z = 10.3;
-        document.write(x, "<br>", y, "<br>", z, "<br>");
+      console.log("Hello from console");
 
-        var abcV_xyz1 = "Test variable";
-        document.write(abcV_xyz1);
+      var x, y, z, p, q;
+      x = "string";
+      y = 50;
+      z = 10.3;
+      p = true;
 
-        function example() {
-            console.log(ex);
+      console.log(typeof x);
+      console.log(typeof y);
+      console.log(typeof z);
+      console.log(typeof p);
+      console.log(typeof q);
+      document.write(x, "<br>", y, "<br>", z, "<br>");
 
-            var ex = 10;
-            console.log(ex);
-            console.log(x);
-        }
+      var abcV_xyz1 = "Test variable";
+      document.write(abcV_xyz1);
 
-        example();
 
+      function example() {
         console.log(ex);
+
+        var ex = 10;
+        console.log(ex);
+        // console.log(x);
+      }
+
+      example();
+
+      console.log(ex);
+
+      //Use let instead of var
+      //let variable can be used only after initialization
+      //But var variable can be use before initialization
+      function examplelet() {
+        console.log(exl);
+
+        let exl = 10;
+        console.log(exl);
+
+        const con = 10;
+        con = 40; //Error: can't update const
+      }
+
+      examplelet();
+
+      console.log(exl);
+
+      var var1 = 100.234;
+      function varlet (){
+        var var1 = "abc";
+        console.log(var1);
+      }
+
+      function varlet2 (){
+        var var1 = 789;
+        console.log(var1);
+      }
+
+      varlet();
+      varlet2();
     </script>
-</body>
+  </body>
 </html>
 
 <!-- 
