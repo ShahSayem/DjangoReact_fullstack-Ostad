@@ -27,55 +27,54 @@
       z = 10.3;
       p = true;
 
-      console.log(typeof x);
-      console.log(typeof y);
-      console.log(typeof z);
-      console.log(typeof p);
-      console.log(typeof q);
+      document.write(typeof x + "<br>");
+      document.write(typeof y + "<br>");
+      document.write(typeof z + "<br>");
+      document.write(typeof p + "<br>");
+      document.write(typeof q + "<br>");
       document.write(x, "<br>", y, "<br>", z, "<br>");
 
       var abcV_xyz1 = "Test variable";
-      document.write(abcV_xyz1);
-
+      document.write(abcV_xyz1 + "<br>");
 
       function example() {
-        console.log(ex);
+        document.write(ex + "<br>");
 
         var ex = 10;
-        console.log(ex);
+        document.write(ex + "<br>");
         // console.log(x);
       }
 
       example();
 
-      console.log(ex);
+      document.write(ex + "<br>");
 
       //Use let instead of var
       //let variable can be used only after initialization
       //But var variable can be use before initialization
       function examplelet() {
-        console.log(exl);
+        document.write(exl + "<br>");
 
         let exl = 10;
-        console.log(exl);
+        document.write(exl + "<br>");
 
         const con = 10;
         con = 40; //Error: can't update const
       }
 
       examplelet();
-
-      console.log(exl);
+      // document.write("Hello");
+      document.write(exl + "<br>");
 
       var var1 = 100.234;
-      function varlet (){
+      function varlet() {
         var var1 = "abc";
-        console.log(var1);
+        document.write(var1 + "<br>");
       }
 
-      function varlet2 (){
+      function varlet2() {
         var var1 = 789;
-        console.log(var1);
+        document.write(var1 + "<br>");
       }
 
       varlet();
