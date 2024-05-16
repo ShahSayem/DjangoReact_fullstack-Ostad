@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS 2</title>
+  </head>
+  <body>
+    <script>
+      //Object
+      let gender = "Male";
+      const person = {
+        name: "Sayem",
+        age: 24,
+        height: 6.1,
+        personGender: gender,
+      };
+
+      document.write("The given object is: " + JSON.stringify(person) + "<br>");
+      document.write("Type of person: " + typeof person + "<br>");
+
+      //Array
+      const colors = ["Red", "Green", "Blue", "Yellow", 7, true, 3.56];
+      document.write("The given array is: " + colors + "<br>");
+      document.write("1st element is: " + colors[0] + "<br>");
+      document.write("6st element is: " + colors[5] + "<br>");
+      document.write("Type of colors: " + typeof colors + "<br>");
+
+      //Date data type
+      let date = new Date();
+      document.write("Current date & time is:" + date + "<br>");
+      // console.log(typeof date);
+      document.write("Type of date: " + typeof date + "<br>");
+
+      //Conditional
+      let age = 20;
+
+      if (age >= 18) {
+        document.write("You are adult" + "<br>");
+      } else {
+        document.write("You are not adult" + "<br>");
+      }
+
+      let result, comp, x, y, z, p;
+      (x = 20), (y = 6);
+      z = x + y;
+      z++;
+
+      p = "20";
+      document.write(z + "<br>");
+      document.write((x % y) + "<br>");
+
+      // "==" => convert data type to compare
+      //where "===" does not convert data type
+      if (x === p) {
+        comp = "x & y are same in both ways";
+      } else {
+        comp = "x & y are not same in both ways";
+      }
+
+      document.write(comp + "<br>");
+    </script>
+
+    <div id="While"></div>
+    <div id="DoWhile"></div>
+    <div id="forLoop"></div>
+
+    <script type="text/javascript">
+      // While loop
+      let while1 = document.getElementById("While");
+      let cnt = 1;
+      while1.innerHTML = "<br> Starting of while loop <br>";
+
+      while (cnt <= 10) {
+        while1.innerHTML += "Current count: " + cnt + "<br>";
+        cnt++;
+      }
+
+      while1.innerHTML += "While loop Stopped! <br>";
+
+      //Do while: at least run once
+      let while2 = document.getElementById("DoWhile");
+      cnt = 1;
+      while2.innerHTML = "<br> Starting of do while loop <br>";
+
+      do {
+        while2.innerHTML += "Current count: " + cnt + "<br>";
+        cnt++;
+      } while (cnt <= 0);
+
+      while2.innerHTML += "Do while loop Stopped! <br>";
+
+      //For loop
+      let for1 = document.getElementById("forLoop");
+      for1.innerHTML = "<br> Starting of for loop <br>";
+
+      for (let i = 0; i <= 10; i++) {
+        if (i == 3) {
+          for1.innerHTML += "Continue statement" + "<br>";
+          continue;
+        }
+
+        if (i > 8) {
+          for1.innerHTML += "Break statement" + "<br>";
+          break;
+        }
+
+        for1.innerHTML += "Current i: " + i + "<br>";
+      }
+
+      for1.innerHTML += "For loop Stopped! <br>";
+    </script>
+
+    <!-- More Object -->
+    <p id="object"></p>
+    <script>
+      // const myBook = {
+      //   title: "C Programming",
+      //   author: "Tamim Shahriar Subeen",
+      //   price: 200
+      // }
+
+      let myBook = new Object();
+      myBook.title = "Elon Musk";
+      myBook.author = "Ashlee Vance";
+      myBook.publisher = "Rokomari";
+
+      document.getElementById("object").innerHTML =
+        "Book name is: " +
+        myBook.title +
+        "<br>" +
+        "Book author is: " +
+        myBook.author +
+        "<br>" +
+        "Price is: " +
+        myBook.price +
+        " t.k <br>" +
+        "Publisher: " +
+        myBook.publisher +
+        "<br>";
+    </script>
+  </body>
+</html>
