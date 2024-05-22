@@ -17,17 +17,17 @@ def atm():
             choice = int(input("Enter your option:"))
 
             if (choice == 1):
-                print("Your balance: ", balance)
+                print("Your balance: $", balance)
             elif (choice == 2):
-                amount = float(input("Enter the amount to withdraw: "))
+                amount = float(input("Enter the amount to withdraw: $"))
 
                 if (amount > balance):
-                    print("Insufficient balance\n")
+                    print("Insufficient balance!!!\n")
                 else:
                     balance -= amount
                     print(f"${amount} has been withdrawn. Remaining balance: ${balance}\n")
             elif (choice == 3):
-                amount = float(input("Enter the amount to deposit: "))  
+                amount = float(input("Enter the amount to deposit: $"))  
                 balance += amount
                 print(f"${amount} has been deposited. New balance: ${balance}\n")
             elif (choice == 4):
