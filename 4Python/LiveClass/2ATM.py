@@ -4,10 +4,11 @@ def atm():
     balance = 1000
 
     enteredPIN = input("Enter your 4 digit PIN or type 'exit' to quit: ")
-    
+
     while (True):
         if (enteredPIN == pin):
-            print("\n1. Check Balance")
+            print("\n### Options:")
+            print("1. Check Balance")
             print("2. Withdraw Money")
             print("3. Deposit Money")
             print("4. Change PIN")
@@ -24,15 +25,16 @@ def atm():
                     print("Insufficient balance\n")
                 else:
                     balance -= amount
-                    print("${amount} has been withdrawn. Remaining balance: ${balance}\n")
+                    print(f"${amount} has been withdrawn. Remaining balance: ${balance}\n")
             elif (choice == 3):
                 amount = float(input("Enter the amount to deposit: "))  
                 balance += amount
-                print("${amount} has been deposited. New balance: ${balance}\n")
+                print(f"${amount} has been deposited. New balance: ${balance}\n")
             elif (choice == 4):
                 newPIN = input("Enter your new 4 digit PIN:")
                 if (len(newPIN) == 4 and newPIN.isdigit()):
                     pin = newPIN
+                    enteredPIN = newPIN
                     print("PIN changed successfully!\n")
                 else:
                     print("Invalid PIN format (-_-). PIN must be 4 digit number.\n")
