@@ -14,10 +14,10 @@ def atm():
             print("4. Change PIN")
             print("5. Exit\n")
 
-            choice = int(input("Enter your option:"))
+            choice = int(input("Enter your option: "))
 
             if (choice == 1):
-                print("Your balance: $", balance)
+                print("Your balance: ${balance}")
             elif (choice == 2):
                 amount = float(input("Enter the amount to withdraw: $"))
 
@@ -46,6 +46,7 @@ def atm():
             break
         else:
             print("Wrong PIN entered, please try again\n")
+            enteredPIN = input("Enter your 4 digit PIN or type 'exit' to quit: ")
 
 
 atm()
