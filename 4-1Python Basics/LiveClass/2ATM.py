@@ -42,7 +42,7 @@ def atm():
                     print(f"${amount} has been deposited. New balance: ${balance}\n")
                 except ValueError:
                     print("Invalid amount format (-_-). Amount must be in numeric format.\n")
-                    
+
             elif (choice == "4"):
                 newPIN = input("Enter your new 4 digit PIN:")
                 if (len(newPIN) == 4 and newPIN.isdigit()):
@@ -50,6 +50,7 @@ def atm():
                     print("PIN changed successfully!\n")
                 else:
                     print("Invalid PIN format (-_-). PIN must be 4 digit number.\n")
+                    
             elif (choice == "5"):
                 print("Thanks for banking with us. \nHave a nice day!\n")
                 break
