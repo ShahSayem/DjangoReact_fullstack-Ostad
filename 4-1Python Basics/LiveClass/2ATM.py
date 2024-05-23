@@ -17,7 +17,7 @@ def atm():
             choice = int(input("Enter your option: "))
 
             if (choice == 1):
-                print("Your balance: ${balance}")
+                print(f"Your balance: ${balance}")
             elif (choice == 2):
                 amount = float(input("Enter the amount to withdraw: $"))
 
