@@ -39,3 +39,5 @@ for curr in words:
 
 def myFunc():
     print("myFunc called")
+
+myFunc()

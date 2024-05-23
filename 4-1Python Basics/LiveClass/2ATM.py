@@ -33,8 +33,7 @@ def atm():
             elif (choice == 4):
                 newPIN = input("Enter your new 4 digit PIN:")
                 if (len(newPIN) == 4 and newPIN.isdigit()):
-                    pin = newPIN
-                    enteredPIN = newPIN
+                    pin = enteredPIN = newPIN
                     print("PIN changed successfully!\n")
                 else:
                     print("Invalid PIN format (-_-). PIN must be 4 digit number.\n")

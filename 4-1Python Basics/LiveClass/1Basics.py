@@ -15,7 +15,7 @@ print(n1 - n2)
 print(n1 * n2)
 print(n1 / n2)
 print(n1 // n2) #int portion of division
-print(n1 % n2)
+print(n1 % n2) #mod: remender
 print(n1 ** n2) # n1 ^ n2
 
 
