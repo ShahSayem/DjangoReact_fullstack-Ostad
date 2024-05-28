@@ -1,0 +1,85 @@
+Here is my HTML Code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design Project</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="left-flex">
+            <ul>
+                <h2>The <br> Company</h2> <br>
+                <h2>Home</h2> 
+                <h2>Showcase</h2> 
+                <h2>Services</h2> 
+                <h2>Designers</h2>  
+                <h2>Packages</h2> 
+                <h2>Contact</h2>
+            </ul>
+        </div>
+
+        <div class="main-flex">
+                <h1 class="heading"><b>Interior Design</b></h1>
+            
+            <div class="showcase-container">
+                <h1>Showcase.</h1>
+                <hr>
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col">
+                        <img src="images/showcase-01.jpg" style="width: 100%">
+                    </div>
+                    <div class="col">
+                        <img src="images/showcase-02.jpg" style="width: 100%">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="images/showcase-03.jpg" style="width: 100%">
+                    </div>
+                    <div class="col">
+                        <img src="images/showcase-04.jpg" style="width: 100%">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="images/showcase-05.jpg" style="width: 100%">
+                    </div>
+                    <div class="col">
+                        <img src="images/showcase-06.jpg" style="width: 100%">
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+Here is my CSS code:
+.flex-container {
+    display: flex;
+  }
+  
+  .left-flex {
+    background-color: rgb(252, 94, 2);
+    text-align: center;
+    color: white;
+    width: 20%; /* Ensure this takes 20% of the screen */
+    min-width: 150px; /* Ensure it doesn't shrink below this width */
+    padding-bottom: 10px; /* Adjust padding for proper spacing */
+    position: relative; /* Remove fixed positioning to allow flexbox to manage layout */
+    cursor: pointer;
+  }
+
+.main-flex {
+  padding: 5px;
+}
+
+
+I want my left-flex set on the left side of the screen (around 20% of the screen) and main-flex will take the other portion. 
+What is the mistake here and what should I do ??

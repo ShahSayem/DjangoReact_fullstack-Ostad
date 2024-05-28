@@ -1,0 +1,238 @@
+/* Import poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ash-light: rgb(240, 242, 249);
+  --ash-dark: rgb(179, 179, 187);
+  --myorange: rgb(252, 94, 2);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+b {
+  font-size: 60px;
+}
+
+h1 {
+  font-size: 50px;
+  color: var(--myorange);
+  margin: 0px;
+}
+
+h3 {
+  padding: 5px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.left-flex {
+  background-color: var(--myorange);
+  text-align: center;
+  color: white;
+  width: 18%;
+  padding-top: 50px;
+  padding-bottom: 460px;
+  position: fixed;
+}
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.left-flex ul li h3:hover {
+  transition: 0.3s;
+  background-color: white;
+  color: black;
+}
+
+.left-flex ul a:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  color: black;
+}
+
+.main-flex {
+  margin-left: 20%;
+  margin-right: 2%;
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex-direction: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.col-person {
+  background-color: var(--ash-light);
+  flex-direction: 33.33%;
+  padding: 5px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.person {
+  color: rgb(128, 123, 123);
+}
+
+.heading,
+.num,
+.num2 {
+  color: black !important;
+}
+
+hr {
+  width: 50px;
+  border: 5px solid var(--myorange);
+  float: left;
+  border-radius: 5px;
+  margin: 20px 20px 20px 0px;
+
+  /* margin: top right bottom left; */
+}
+
+.gap {
+  height: 50px;
+}
+
+.package-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.package-item {
+  flex: 1;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  min-width: 340px;
+  border-collapse: collapse;
+}
+
+td {
+  background-color: var(--ash-light);
+  border-bottom: 1px solid var(--ash-dark);
+  text-align: center;
+  padding: 15px;
+}
+
+th {
+  padding: 40px;
+  text-align: center;
+}
+
+.big-40 {
+  font-size: 40px;
+  color: rgb(128, 123, 123);
+}
+
+.wrapper {
+  color: rgb(128, 123, 123);
+}
+
+.room-cnt,
+.room-cnt2,
+.room {
+  font-size: 20px;
+}
+
+#calc {
+  font-size: 40px;
+  color: rgb(128, 123, 123);
+}
+
+span {
+  color: rgb(128, 123, 123);
+}
+
+.plus,
+.minus,
+.plus2,
+.minus2 {
+  cursor: pointer;
+  color: black;
+}
+
+.footer td {
+  padding-top: 40px;
+  border: none;
+}
+
+.basic {
+  background-color: var(--ash-dark);
+  color: white;
+}
+
+.pro {
+  background-color: var(--myorange);
+  color: white;
+}
+
+.signup-button {
+  width: 110px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+.signup-button-2 {
+  width: 110px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+.signup-button:hover,
+.signup-button-2:hover {
+  transition: 0.3s;
+  background-color: var(--myorange);
+  color: white;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: var(--myorange);
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.foot-gap {
+  background-color: var(--ash-light);
+  width: 100%;
+  padding: 60px;
+}
