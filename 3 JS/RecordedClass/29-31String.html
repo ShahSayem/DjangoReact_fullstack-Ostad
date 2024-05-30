@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+    <script>
+        let country = "Bangladesh";
+        let country2 = "_Bhutan";
+        document.write(country.charAt(3) +"<br>");
+        document.write(country.concat(country2) +"<br>");
+        document.write(country.indexOf("t") +"<br>");
+        document.write(country.lastIndexOf("a") +"<br>");
+
+                                //start  size
+        document.write(country.substr(6, 4) +"<br>");
+        document.write(country2.replace("tan", "TAN") +"<br>");
+
+                                    //start end+1
+        document.write(country.substring(6, 10) +"<br>");
+        // country.toLocaleLowerCase, country.toLocaleUpperCase etc etc
+        
+        let name = "    Shah Sayem Ahmad    ";
+        name = name.trim();
+        document.write(name.length);
+    </script>
+<body>
+    
+</body>
+</html>

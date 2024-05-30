@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+    <script>
+        let person = {
+            name: "Shah Sayem Ahmad",
+            height: "5'10'' ",
+            weight: 75, //kg
+            tech: "Django"
+        }
+
+        document.write(JSON.stringify(person) + "<br>");
+        // document.write(person.name + "<br>");
+
+        for(let info in person){        
+            document.write(info + ": " + person[info] + "<br>")
+        }
+
+    </script>
+<body>
+    
+</body>
+</html>
