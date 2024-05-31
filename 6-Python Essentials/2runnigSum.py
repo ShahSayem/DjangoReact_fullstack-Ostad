@@ -6,6 +6,9 @@ while(True):
     if (curr == "quit"):
         break
     else:
-        curr = int(curr)
-        runnigTotal += curr
-        print("Running total: ", runnigTotal)
+        try:
+            curr = float(curr)
+            runnigTotal += curr
+            print("Running total: ", runnigTotal)
+        except:
+            print("Your inpur is in incorrect format(-_-) \nTry again!!!")

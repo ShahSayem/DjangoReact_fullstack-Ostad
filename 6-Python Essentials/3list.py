@@ -26,5 +26,5 @@ print(li)
 myList = ["s", "y", "l", "h", "e", "t"]
 myList[0] = "0"
 
-str = "".join(myList)
+str = "".join(myList) #join by "", we can also use: "+", "-"
 print(str)
