@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window</title>
+</head>
+    <script>
+        function ObjAlert(){
+            alert("Save Success!!!");
+        }
+        function ObjConfirm(){
+            let result = confirm("Do you want to delete???");
+            document.write(result);
+        }
+        function ObjPrompt(){
+            let result = prompt("Enter your name:");
+            document.write(result);
+        }
+        function ObjOpen(){
+            open();
+        }
+        function ObjClose(){
+            close();
+        }
+
+        setTimeout(function(){
+            alert("Time Out!!!")
+        },1000) //ms
+
+    </script>
+<body>
+    <button onclick="ObjAlert()">Alert</button>
+    <button onclick="ObjConfirm()">Confirm</button>
+    <button onclick="ObjPrompt()">Prompt</button>
+    <button onclick="ObjOpen()">Open</button>
+    <button onclick="ObjClose()">Close</button>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date, Math and Number</title>
+</head>
+    <script>
+        let obj = new Date();
+
+        document.write(obj.getDate() +"<br>");
+        document.write(obj.getDay() +"<br>");
+        document.write(obj.getFullYear() +"<br>");
+        document.write(obj.getHours() +"<br>");
+        document.write("Current date & time is:" + obj + "<br>");
+
+
+        let n = -7.24444444444;
+        document.write(Math.abs(n) +"<br>");
+        document.write(Math.ceil(n) +"<br>");
+        document.write(Math.floor(n) +"<br>");
+        document.write(Math.round(n) +"<br>");
+        document.write(Math.max(2, 3, 4) +"<br>");
+        document.write(Math.min(2, 3, 4) +"<br>");
+        document.write(Math.random() +"<br>"); //0-1
+        
+
+        document.write(Number.isInteger(n) +"<br>");
+        document.write(Number.isFinite(n) +"<br>");
+        let n2 = "3.34"
+        document.write(Number.parseFloat(n2) +"<br>");
+        document.write(n.toFixed(3) +"<br>");
+        document.write(n.toString() +"<br>");
+    </script>
+<body>
+    
+</body>
+</html>
