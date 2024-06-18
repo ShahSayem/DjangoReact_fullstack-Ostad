@@ -6,7 +6,7 @@ t.bgcolor("green")
 caterPiller = t.Turtle()
 caterPiller.shape("square")
 caterPiller.color("red")
-caterPiller.speed(0.5)
+caterPiller.speed(1)
 caterPiller.penup()
 caterPiller.hideturtle()
 
@@ -86,9 +86,9 @@ def startGame():
             caterPiller.shapesize(1, caterPillerLength, 1)
             caterPillerSpeed += 1
             score += 5
-            displayScore()
+            displayScore(score)
 
-        if (outsideWindow):
+        if (outsideWindow()):
             gameOver()
             break
 
