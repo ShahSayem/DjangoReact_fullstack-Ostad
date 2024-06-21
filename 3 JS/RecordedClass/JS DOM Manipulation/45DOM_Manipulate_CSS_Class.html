@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulate CSS Class</title>
+    <style>
+        .text-primary {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="myID">Click to Add</h1>
+    <button onclick="cssClassManipulation()">Manipulate</button>
+
+    <script>
+        function cssClassManipulation() {
+            let x = document.getElementById("myID");
+            if (x.classList.contains("text-primary")) {
+                x.classList.remove("text-primary");
+                x.textContent = "Click to Add";
+            } else {
+                x.classList.add("text-primary");
+                x.textContent = "Added & Click to remove";
+            }
+        }
+    </script>
+</body>
+</html>

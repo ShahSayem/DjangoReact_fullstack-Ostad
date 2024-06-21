@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>43 HTML DOM Document</title>
+</head>
+<body>
+    <p>Click the button to open a new window and add some content.</p>
+    <button onclick="myFunc()">Try it now</button>
+
+    <p></p>
+    <p id="demo"></p>
+    <button onclick="getElements()">How many elements tag p?</button> 
+
+    <script>
+        function myFunc(){
+            let w = window.open();
+            w.document.open();
+            w.document.write("<h2>Hello, This is the new window!!!</h2>");
+            w.document.close();
+        }
+
+        function getElements(){
+            let x = document.getElementsByTagName("p");
+            document.getElementById("demo").innerHTML = x.length;
+        }
+    </script>
+</body>
+</html>

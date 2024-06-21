@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>42 HTML DOM Document</title>
+</head>
+<body>
+    <p></p>
+    <button onclick="Demo()">Click</button>
+    <button onclick="DemoReplace()">Click to replace</button>
+
+    <script>
+        function Demo() {
+            // let info = document.cookie;
+            // let info = document.domain;
+            // let info = document.lastModified;
+            // let info = document.title;
+            let info = document.URL;
+            document.getElementsByTagName("p")[0].innerHTML = info;
+        }
+
+        function DemoReplace(){
+            document.open("text/html", "replace");
+            document.write("<h2>Hello<h2>");
+            document.close();    
+        }
+    </script>
+</body>
+</html>

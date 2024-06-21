@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Change Attribute Value</title>
+</head>
+<body>
+    <iframe id="image" src="https://drive.google.com/file/d/13zHLjUg-mYlC9OgOMfmq3-NljzIm5GDx/preview" width="640" height="480" allow="autoplay"></iframe>
+    <button onclick="CHangeSrc()">Change image</button>
+
+    <script>
+        function CHangeSrc(){
+            let imageVal = document.getElementById("image");
+
+            if (imageVal.width == 640){
+                imageVal.src = "https://drive.google.com/file/d/1XmfQ4kALIJv1eu1vUasTMga8VgEE89Rw/preview";
+                imageVal.width = "400";
+            } 
+            else {
+                imageVal.src = "https://drive.google.com/file/d/13zHLjUg-mYlC9OgOMfmq3-NljzIm5GDx/preview";
+                imageVal.width = "640";
+            }   
+        }
+    </script>
+</body>
+</html>

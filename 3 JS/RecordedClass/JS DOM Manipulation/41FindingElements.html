@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Elements</title>
+</head>
+<body>
+    <h1 id="myID">LOL</h1>
+    
+    
+    <h5 class="myClass">lol</h5> <!-- 0 -->
+    <h2 class="myClass">lol</h2> <!-- 1 -->
+    <button class="myClass">lol</button> <!-- 2 -->
+
+    <h5 name="myName">lol 2</h5> <!-- 0 -->
+    <h2 name="myName">lol 2</h2> <!-- 1 -->
+    <button name="myName">lol 2</button> <!-- 2 -->
+
+    <p>lol 3</p> <!-- 0 -->
+    <p>lol 3</p> <!-- 1 -->
+    <p>lol 3</p> <!-- 2 -->
+
+    <script>
+        let myElement = document.getElementById("myID");
+        myElement.innerHTML = "Eid Mubarak";
+
+        let myElement2 = document.getElementsByClassName("myClass");
+        myElement2[2].innerHTML = "Class";
+
+        let myElement3 = document.getElementsByName("myName");
+        myElement3[2].innerHTML = "Name";
+
+        let myElement4 = document.getElementsByTagName("p");
+        myElement4[2].innerHTML = "Tag";
+    </script>
+</body>
+</html>

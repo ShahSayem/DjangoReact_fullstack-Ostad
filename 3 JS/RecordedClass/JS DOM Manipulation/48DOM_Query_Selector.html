@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Query Selector</title>
+</head>
+<body>
+    <h1>H1</h1>
+    <h2 id="myID">H2</h2>
+    <h3 class="myClass">H3</h3>
+    <h4 name="myName">H4</h4>
+    <input placeholder="...">
+    <button onclick="change()">Change</button>
+
+    <script>
+        function change(){
+            document.querySelector("h1").innerHTML = "Changed H1";
+            document.querySelector("#myID").innerHTML = "Changed H2";
+            document.querySelector(".myClass").innerHTML = "Changed H3";
+            document.querySelector('h4[name="myName"]').innerHTML = "Changed H4";
+            document.querySelector("input").placeholder = "Changed placeholder";
+        }
+    </script>
+</body>
+</html>
