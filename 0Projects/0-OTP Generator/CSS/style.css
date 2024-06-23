@@ -80,3 +80,11 @@ body {
   right: 20px;
   cursor: pointer;
 }
+
+.reset-btn {
+  background-color: rgb(204, 167, 196);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
