@@ -1,19 +1,23 @@
 class Car:
+    #Constructor
     def __init__(self, make, model, year):
         self.make = make
         self.model = model
         self.year = year
         self.odometer = 0
 
+    #Method
     def updateOdometer(self, om):
-        if (om > self.odometer):
+        if (om >= self.odometer):
             self.odometer = om
         else:
             print("Can not update odometer at a lower value!")
 
+    #Defined print statement
     def __str__(self):
         return "This car is {} {} and year: {}".format(self.make, self.model, self.year)
 
+    #Defined equality 
     def __eq__(self, value):
         return (self.make == value.make and self.model == value.model and self.year == self.year)
     
